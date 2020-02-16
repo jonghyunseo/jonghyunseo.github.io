@@ -6,7 +6,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
     - name: REST Recorder
       uses: jirikuncar/recorder@v1
       with:
