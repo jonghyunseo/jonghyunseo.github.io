@@ -20,8 +20,7 @@ jobs:
     - name: load file
       run: |
         npm ci
-        npm install 
-        node update.js
+        npm run fetch
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
