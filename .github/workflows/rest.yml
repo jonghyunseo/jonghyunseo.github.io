@@ -1,9 +1,11 @@
 name: REST Recorder
-  uses: jirikuncar/recorder@v1
-  with:
-    # URL of an REST endpoint (application/json).
-    endpoint: https://www.nlotto.co.kr/common.do?method=getLottoNumber&drwNo=898
-    # The authentication header
-    authentication: # optional, default is 
-    # Process JSON response with JQ query
-    jq: # optional, default is .
+uses: jirikuncar/recorder@v1
+with:
+  # URL of an REST endpoint (application/json).
+  endpoint: https://www.nlotto.co.kr/common.do?method=getLottoNumber&drwNo=898
+  # The authentication header
+  authentication: # optional, default is 
+  # Process JSON response with JQ query
+  jq: # optional, default is .
+
+
