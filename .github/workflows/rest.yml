@@ -13,6 +13,7 @@ jobs:
 #         endpoint: 'https://www.nlotto.co.kr/common.do?method=getLottoNumber&drwNo=898'
 #     - name: Show response
 #       run: echo -e "${{ steps.lotto.outputs.response }}"
+    - uses: actions/checkout@v2
     - name: Use Node.js 10.x
       uses: actions/setup-node@v1
       with:
@@ -23,4 +24,3 @@ jobs:
     - run: npm run fetch
       env:
         NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
