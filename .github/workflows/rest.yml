@@ -19,7 +19,6 @@ jobs:
         node-version: 10.x
     - name: load file
       run: |
-        npm ci
         npm run fetch
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
