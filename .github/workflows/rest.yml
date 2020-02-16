@@ -6,20 +6,21 @@ jobs:
   fetch:
     runs-on: ubuntu-latest
     steps:
-    - name: Get Lotto Result
-      id: lotto
-      uses: jirikuncar/recorder@v1
-      with:
-        endpoint: 'https://www.nlotto.co.kr/common.do?method=getLottoNumber&drwNo=898'
-    - name: Show response
-      run: echo -e "${{ steps.lotto.outputs.response }}"
+#     - name: Get Lotto Result
+#       id: lotto
+#       uses: jirikuncar/recorder@v1
+#       with:
+#         endpoint: 'https://www.nlotto.co.kr/common.do?method=getLottoNumber&drwNo=898'
+#     - name: Show response
+#       run: echo -e "${{ steps.lotto.outputs.response }}"
     - name: Use Node.js 10.x
       uses: actions/setup-node@v1
       with:
         node-version: 10.x
-    - name: load file
-      run: |
-        npm run fetch
+    - run: npm install
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - run: npm run fetch
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
