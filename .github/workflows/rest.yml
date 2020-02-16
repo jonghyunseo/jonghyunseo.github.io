@@ -12,5 +12,5 @@ jobs:
       with:
         # URL of an REST endpoint (application/json).
         endpoint: 'https://www.nlotto.co.kr/common.do?method=getLottoNumber&drwNo=898'
-    - run: echo -e "${{ steps.lotto.response }}\\t${{ steps.stars.outputs.response }}" | tee -a stars.tsv
+    - run: echo -e "${{ steps.lotto.response }}\\t${{ steps.lotto.outputs.response }}" | tee -a lotto.tsv
 
