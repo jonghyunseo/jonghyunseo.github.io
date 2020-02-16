@@ -7,9 +7,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: REST Recorder
+      id: lotto
       uses: jirikuncar/recorder@v1
       with:
         # URL of an REST endpoint (application/json).
         endpoint: 'https://www.nlotto.co.kr/common.do?method=getLottoNumber&drwNo=898'
-    - run: echo -e "${{ response }}\\t${{ steps.stars.outputs.response }}" | tee -a stars.tsv
+    - run: echo -e "${{ steps.lotto.response }}\\t${{ steps.stars.outputs.response }}" | tee -a stars.tsv
 
