@@ -12,4 +12,5 @@ jobs:
       with:
         # URL of an REST endpoint (application/json).
         endpoint: 'https://www.nlotto.co.kr/common.do?method=getLottoNumber&drwNo=898'
+        jq : '.totSellamnt'
 
