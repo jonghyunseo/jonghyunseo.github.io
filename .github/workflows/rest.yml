@@ -1,12 +1,17 @@
-name: REST Recorder
-on : [push]
-uses: jirikuncar/recorder@v1
-with:
-  # URL of an REST endpoint (application/json).
-  endpoint: https://www.nlotto.co.kr/common.do?method=getLottoNumber&drwNo=898
-  # The authentication header
-  authentication: # optional, default is 
-  # Process JSON response with JQ query
-  jq: # optional, default is .
+name: CI
 
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: REST Recorder
+      uses: jirikuncar/recorder@v1
+      with:
+        # URL of an REST endpoint (application/json).
+        endpoint: https://www.nlotto.co.kr/common.do?method=getLottoNumber&drwNo=898
 
