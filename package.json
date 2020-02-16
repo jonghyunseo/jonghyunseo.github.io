@@ -1,0 +1,21 @@
+{
+  "name": "jonghyunseo.github.io",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "update.js",
+  "scripts": {
+    "fetch" : "node update.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonghyunseo/jonghyunseo.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonghyunseo/jonghyunseo.github.io/issues"
+  },
+  "homepage": "https://github.com/jonghyunseo/jonghyunseo.github.io#readme"
+}
