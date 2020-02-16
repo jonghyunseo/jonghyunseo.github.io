@@ -4,7 +4,7 @@
   "description": "test",
   "main": "update.js",
   "scripts": {
-    "fetch" : "node update.js",
+    "fetch": "node update.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/jonghyunseo/jonghyunseo.github.io/issues"
   },
-  "homepage": "https://github.com/jonghyunseo/jonghyunseo.github.io#readme"
+  "homepage": "https://github.com/jonghyunseo/jonghyunseo.github.io#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "xmlhttprequest": "^1.8.0"
+  }
 }
