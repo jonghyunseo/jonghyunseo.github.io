@@ -1,4 +1,5 @@
 name: REST Recorder
+on : [push]
 uses: jirikuncar/recorder@v1
 with:
   # URL of an REST endpoint (application/json).
