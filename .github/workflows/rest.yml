@@ -10,7 +10,6 @@ jobs:
       uses: jirikuncar/recorder@v1
       with:
         # URL of an REST endpoint (application/json).
-        endpoint: 'https://api.github.com/repos/jonghyunseo/jonghyunseo.github.io'
-        jq : '.totSellamnt'
-    - run: echo -e "${{ steps.stars.outputs.time }}\\t${{ steps.stars.outputs.response }}" | tee -a stars.tsv
+        endpoint: 'https://www.nlotto.co.kr/common.do?method=getLottoNumber&drwNo=898'
+    - run: echo -e "${{ response }}\\t${{ steps.stars.outputs.response }}" | tee -a stars.tsv
 
