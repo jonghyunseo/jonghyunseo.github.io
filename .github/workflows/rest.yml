@@ -11,5 +11,6 @@ jobs:
       uses: jirikuncar/recorder@v1
       with:
         endpoint: 'https://www.nlotto.co.kr/common.do?method=getLottoNumber&drwNo=898'
-    - run: echo -e "${{ steps.lotto.outputs.response }}"
+    - name: Show response
+      run: echo -e "${{ steps.lotto.outputs.response }}"
 
