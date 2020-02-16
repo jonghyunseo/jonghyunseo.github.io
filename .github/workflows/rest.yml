@@ -1,4 +1,4 @@
-- name: REST Recorder
+name: REST Recorder
   uses: jirikuncar/recorder@v1
   with:
     # URL of an REST endpoint (application/json).
