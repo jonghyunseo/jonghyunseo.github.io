@@ -1,4 +1,4 @@
-name: CI
+name: RestAPI
 
 on: [push]
 
